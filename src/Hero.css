@@ -1,0 +1,127 @@
+/* Hero section base */
+#hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* hides images that move outside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: 'Impact', sans-serif;
+
+  
+} 
+
+/* The slider container */
+.hero-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  display: flex;
+  animation: slideLeft 16s ease-in-out infinite;
+}
+
+
+/* Each image slide */
+.slide {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* First and second background images */
+.slide:nth-child(1) {
+  background-image: url('C:\Users\Ajay G\OneDrive\Desktop\study related\1Web\aj6motors\public\pic1_aj6.jpg');
+}
+
+.slide:nth-child(2) {
+  background-image: url('C:\Users\Ajay G\OneDrive\Desktop\study related\1Web\aj6motors\public\pic2_aj6.jpeg');
+}
+
+/* Keyframes for sliding */
+@keyframes slideLeft {
+  0%, 25% {
+    transform: translateX(0);       /* stay on first image */
+  }
+
+  35%, 45% {
+    transform: translateX(-50%);    /* slide to second image */
+  }
+
+  45%, 75% {
+    transform: translateX(-50%);    /* hold on second image */
+  }
+
+  85%, 100% {
+    transform: translateX(0);       /* slide back to first */
+  }
+}
+
+
+
+/* Dark overlay */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Text container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #d9d9d9;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.hero-content button {
+  background-color: #ff4040;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 11px;
+  font-family: Impact, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-content button:hover {
+  background-color: transparent;
+  border: 1px solid #ff4040;
+  color: #ff4040;
+  transform: scale(1.05);
+}
+
+/* Responsive text */
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+  .hero-content p {
+    font-size: 11px;
+  }
+}
+
