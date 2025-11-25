@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
+import ServicesLocation from "./ServicesLocation";
 
 
 
@@ -18,11 +19,7 @@ function App() {
     }}
     />
     <Hero/>
-    {/* <main>
-        {[...Array(18)].map((_, i) => (
-          <p key={i}>Placeholder content line {i + 1}</p>
-        ))}
-      </main> */}
+    <ServicesLocation/>
     <Footer/>
     </>
      

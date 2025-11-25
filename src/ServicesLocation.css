@@ -1,0 +1,117 @@
+#services-location {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background-color: #25253f;
+  /* background-color: #000000; */
+  color: white;
+  padding: 6vh 5vw;
+  font-family: 'Impact', sans-serif;
+  gap: 5vw;
+}
+
+.services {
+  flex: 1 1 50%;
+  min-width: 320px;
+}
+
+.services h2,
+.location h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: #ff4040;
+  margin-bottom: 2vh;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2vw;
+}
+
+.service-card {
+  background: #30304a;
+  padding: 2vh 2vw;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card h3 {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  margin-bottom: 1vh;
+  color: #ff4040;
+  transition: color 0.3s ease;
+}
+
+.service-card p {
+  opacity: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #d9d9d9;
+  max-height: 0;
+  transition: all 0.4s ease;
+}
+
+/* Hover / Active animation */
+.service-card:hover {
+  transform: scale(1.05);
+  background-color: #202030;
+  box-shadow: 0 0 15px rgba(255, 64, 64, 0.5);
+  border-color: #ff4040;
+}
+
+.service-card:hover h3 {
+  color: white;
+}
+
+.service-card:hover p {
+  opacity: 1;
+  max-height: 200px;
+  margin-top: 1vh;
+}
+
+/* Location styling */
+.location {
+  flex: 1 1 40%;
+  min-width: 300px;
+  background-color: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 3vh 2vw;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+}
+
+.location p {
+  font-size: 0.95rem;
+  color: #d9d9d9;
+  margin: 0.5vh 0;
+}
+
+iframe {
+  margin-top: 1vh;
+  border-radius: 10px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  #services-location {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services, .location {
+    width: 100%;
+  }
+  .service-card {
+    padding: 2vh 4vw;
+  }
+}
