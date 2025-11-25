@@ -31,6 +31,10 @@ function ServicesLocation() {
             <h3>General Maintenance</h3>
             <p>Oil change, brake check, fluid top-up, and more for smooth rides.</p>
           </div>
+          <div className="service-card">
+            <h3>Car Wash</h3>
+            <p>High-pressure wash, foam cleaning, and detailing for a spotless shine.</p>
+          </div>
 
         </div>
       </div>
@@ -38,11 +42,13 @@ function ServicesLocation() {
       <div className="location">
         <h2>Visit Us</h2>
         <p>AJ6 Motors</p>
-        <p>Near [Your Area Name], Jalandhar, Punjab</p>
-        <p>📞 +91 XXXXX XXXXX</p>
-        <p>🕒 Open: 9:00 AM – 7:00 PM</p>
+        <br></br>
+        <p>1-144, Satti Reddy Complex, Ganesh Nagar Beside Lambodar Tires, Near Zudio Shopping Komaplly, Main Road, Bolarum, Secunderabad, Telangana 500100, India</p>
+        <br></br>
+        <p> +91 73865 94076</p>
+        <p> Open: 10:00 AM – 8:00 PM</p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.3547203235116!2d78.48832087475198!3d17.538290383374843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb85997367c6e5%3A0x4f7d4c41f6767345!2sAJ6%20Motors%20Car%20Service%20Centre!5e0!3m2!1sen!2sin!4v1764050633249!5m2!1sen!2sin"
           width="100%"
           height="250"
           style={{ border: 0 }}
