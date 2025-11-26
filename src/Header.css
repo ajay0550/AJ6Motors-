@@ -1,14 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-#header {
+/* #header {
+  
   background-color: #25253f;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1px 5px 4px 2px;
   border-bottom: 1px solid #ff4040;
+} */
+#header {
+  background: linear-gradient(
+    to right,
+    #000 0%,
+    #000 10%,
+    #fff 15%,
+    #fff 70%,
+    #000 75%,
+    #000 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 5px 4px 2px;
+  border-bottom: 1px solid #ff4040;
+  position: sticky;
+  top:0;
+  z-index: 1000;
 }
-
 
 
 .brand-text {

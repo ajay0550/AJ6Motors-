@@ -1,0 +1,94 @@
+.service-card {
+  width: 280px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  font-family: sans-serif;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 5px;
+  padding-bottom: 0px;
+}
+
+.card-top {
+  display: flex;
+  padding: 0px;
+  padding-left: 0px;
+  /* gap: 2px; */
+}
+
+.card-image {
+  width: 120px;
+  height: 110px;
+  border-radius: 0px;
+  object-fit: cover;
+  
+
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+  white-space: nowrap; 
+}
+
+
+.card-points {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: #4a4a4a;
+  font-size: 0.9rem;
+}
+
+.card-bottom {
+  background: linear-gradient(90deg, #e8ffe8, #f9fff9);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d8efd8;
+}
+
+.coupon-text {
+  color: #0a8f43;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+}
+
+.coupon-icon {
+  margin-right: 6px;
+}
+
+.login-link {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.service-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);  /* slight zoom */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}

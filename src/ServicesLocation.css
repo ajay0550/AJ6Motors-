@@ -1,107 +1,29 @@
 #services-location {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  background-color: #1f1f30;
-  /* background-color: #000000; */
-  color: white;
-  padding: 6vh 5vw;
-  font-family: 'Impact', sans-serif;
-  gap: 5vw;
-}
-
-.services {
-  flex: 1 1 50%;
-  min-width: 320px;
-}
-
-.services h2,
-.location h2 {
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
-  color: #ff4040;
-  margin-bottom: 2vh;
+  /* background-color: #f5f5f5; */
+  background: linear-gradient(to bottom, #f7f7f7, #ececec);
+  /* color: #ff4040; */
+  /* color: #832222; */
+  color: #141414;
+  padding: 6vh 10vw;
+  font-family: 'Abril Fatface', sans-serif;
+  text-align: center; /* good for title */
   letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: left;
 }
 
-.service-grid {
+.mainDivh2 {
+  margin-bottom: 2rem;
+  background-color: #b08989;
+  border-radius: 50px;
+}
+
+.mainDiv {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2vw;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  justify-items: center; /* centers the cards */
 }
 
-.service-card {
-  background: #30304a;
-  padding: 2vh 2vw;
-  border: 1px solid #2a2a2a;
-  border-radius: 10px;
-  text-align: center;
-  color: #fff;
-  transition: all 0.4s ease;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  letter-spacing: 0.5px;
-}
 
-.service-card h3 {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  margin-bottom: 1vh;
-  color: #f9f9f9;
-  transition: color 0.3s ease;
-}
-
-.service-card p {
-  opacity: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.9rem;
-  color: #d9d9d9;
-  max-height: 0;
-  transition: all 0.4s ease;
-}
-
-/* Hover / Active animation */
-.service-card:hover {
-  transform: scale(1.05);
-  background-color: #202030;
-  box-shadow: 0 0 15px rgba(255, 64, 64, 0.5);
-  border-color: #ff4040;
-}
-
-.service-card:hover h3 {
-  color: white;
-}
-
-.service-card:hover p {
-  opacity: 1;
-  max-height: 200px;
-  margin-top: 1vh;
-}
-
-/* Location styling */
-.location {
-  flex: 1 1 40%;
-  min-width: 300px;
-  background-color: #1a1a1a;
-  border: 1px solid #2a2a2a;
-  border-radius: 10px;
-  padding: 3vh 2vw;
-  text-align: left;
-  font-family: 'Poppins', sans-serif;
-}
-
-.location p {
-  font-size: 0.95rem;
-  color: #d9d9d9;
-  margin: 0.5vh 0;
-}
-
-iframe {
-  margin-top: 1vh;
-  border-radius: 10px;
-}
 
 /* Mobile layout */
 @media (max-width: 768px) {

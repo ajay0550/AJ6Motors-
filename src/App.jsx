@@ -5,6 +5,7 @@ import ServicesLocation from "./ServicesLocation";
 
 
 
+
 function App() {
 
   return (
@@ -13,14 +14,16 @@ function App() {
     <hr
     style={{
     border: "none",       
-    height: "1px",        
+    height: "0.5px",        
     backgroundColor: "#e50914", 
     margin: 0    
     }}
     />
     <Hero/>
     <ServicesLocation/>
+    
     <Footer/>
+    
     </>
      
   
