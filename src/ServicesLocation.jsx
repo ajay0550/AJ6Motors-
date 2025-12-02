@@ -46,10 +46,9 @@ function ServicesLocation() {
           points={[
                   "Foam wash",
                   "Tyre & wheel cleaning",
-                  "Interior wipe-down",
                   "Deep clean"
                   ]}
-          couponText="Fast same-day wash"
+          couponText="Fast Same-day wash"
           btnText="Book Now"
         />
 

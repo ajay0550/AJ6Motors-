@@ -5,3 +5,7 @@ body{
 }
 
 
+
+* {
+  zoom: 1.10;  /* Increase site size by 15–20% */
+}
