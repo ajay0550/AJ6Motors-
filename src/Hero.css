@@ -1,7 +1,7 @@
 /* Hero section base */
 #hero {
   position: relative;
-  height: 100vh;
+  height: 70vh;
   overflow: hidden; /* hides images that move outside */
   display: flex;
   justify-content: center;

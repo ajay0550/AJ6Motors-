@@ -1,20 +1,26 @@
-import './Footer.css';
+import "./Footer.css";
 
 function Footer() {
   return (
     <footer id="footer">
       <div className="footer-content">
-        <p className="brand"> AJ6 Motors</p>
-        <div className="footer-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Contact Us</a>
+
+        <div className="brand-text">
+        <h1 className="brand-main">AJ6</h1>
+        <div className="brand-line"></div>
+        <p className="brand-sub">Motors</p>
         </div>
-        <div className="socials">
-          <a href="#"><i className="fa-brands fa-instagram"></i></a>
-          <a href="#"><i className="fa-brands fa-x-twitter"></i></a>
-          <a href="#"><i className="fa-brands fa-youtube"></i></a>
+        
+        <div className="footer-info">
+          <p>Open Daily: 10:00 AM – 8:00 PM</p>
+          <p>Kompally Main Road, Hyderabad</p>
+          <p>Phone: +91 7386594076 / +91 9652571976</p>
         </div>
+
+        <p className="footer-copy">
+          © {new Date().getFullYear()} AJ6 Motors. All Rights Reserved.
+        </p>
+
       </div>
     </footer>
   );

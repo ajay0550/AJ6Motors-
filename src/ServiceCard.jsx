@@ -29,7 +29,7 @@ export default function Card({ title, image, points, couponText, btnText }) {
         <div className="coupon-text">
            {couponText}
         </div>
-        <a className="login-link" href="#">{btnText}</a>
+        <a className="login-link" href="#contact-section">{btnText}</a>
       </div>
     </div>
   );
