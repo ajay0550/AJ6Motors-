@@ -2,7 +2,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Hero from "./Hero";
 import ServicesLocation from "./ServicesLocation";
-
+import ReviewSection from "./ReviewSection";
 
 
 
@@ -21,7 +21,7 @@ function App() {
     />
     <Hero/>
     <ServicesLocation/>
-    
+    <ReviewSection/>
     <Footer/>
     
     </>

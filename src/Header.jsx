@@ -8,13 +8,57 @@ function Header() {
         <div className="brand-line"></div>
         <p className="brand-sub">Motors</p>
       </div>
-      
+
       <nav className="nav-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a
+          onClick={() =>
+            document.getElementById("hero")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            })
+          }
+          style={{ cursor: "pointer" }}
+        >
+          Home
+        </a>
+
+        <a
+          onClick={() =>
+            document.getElementById("about-section")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            })
+          }
+          style={{ cursor: "pointer" }}
+        >
+          About
+        </a>
+
+        <a
+          onClick={() =>
+            document.getElementById("services-location")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            })
+          }
+          style={{ cursor: "pointer" }}
+        >
+          Services
+        </a>
+
+        <a
+          onClick={() =>
+            document.getElementById("contact-section")?.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            })
+          }
+          style={{ cursor: "pointer" }}
+        >
+          Contact
+        </a>
       </nav>
+
     </header>
   );
 }
