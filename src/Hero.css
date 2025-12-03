@@ -34,11 +34,11 @@
 
 /* First and second background images */
 .slide:nth-child(1) {
-  background-image: url('C:\Users\Ajay G\OneDrive\Desktop\study related\1Web\aj6motors\public\pic1_aj6.jpg');
+  background-image: url('/pic1_aj6.jpg');
 }
 
 .slide:nth-child(2) {
-  background-image: url('C:\Users\Ajay G\OneDrive\Desktop\study related\1Web\aj6motors\public\pic2_aj6.jpeg');
+  background-image: url('/pic2_aj6.jpg');
 }
 
 /* Keyframes for sliding */
