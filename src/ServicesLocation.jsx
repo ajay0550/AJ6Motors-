@@ -4,16 +4,19 @@ import ServiceCard from './ServiceCard.jsx';
 function ServicesLocation() {
   return (
     <section id="services-location">
-      <h2 className='mainDivh2'>Our Services</h2>
+      <h2 className="section-title">
+        <span>Our Services</span>
+      </h2>
+
 
       <div className='mainDiv'> 
         <ServiceCard className='servicecard'
           title="Car Servicing"
           image="/pic1_aj6.jpg"
           points={[
-                  "Engine oil change",
-                  "Filter cleaning",
-                  "Full car check-up using computer"
+                  "Oil change",
+                  
+                  "Full check-up"
                   ]}
           couponText="⭐ 4.8 rated service"
           btnText="Book Now"
@@ -22,19 +25,17 @@ function ServicesLocation() {
           title="Denting & Painting"
           image="/in_servicesdent.jpg"
           points={[
-                  "Body dent removal",
+                  "Dent removal",
                   "Premium paint finish",
-                  "Color matching guaranteed"
                   ]}
           couponText="Best price guaranteed"
           btnText="Book Now"
         />
         <ServiceCard className='servicecard'
-          title="AC Servicing"
+          title="AC Service"
           image="/ac_service.png"
           points={[
-                  "AC gas check",
-                  "Cooling performance test",
+                  "Cooling test",
                   "Air filter cleaning"
                   ]}
           couponText="⭐ Trusted cooling experts"
@@ -45,7 +46,7 @@ function ServicesLocation() {
           image="/car_wash.png"
           points={[
                   "Foam wash",
-                  "Tyre & wheel cleaning",
+                  "Wheel cleaning",
                   "Deep clean"
                   ]}
           couponText="Fast Same-day wash"

@@ -12,14 +12,7 @@ function App() {
   return (
     <>
     <Header/>
-    <hr
-    style={{
-    border: "none",       
-    height: "0.5px",        
-    backgroundColor: "#e50914", 
-    margin: 0    
-    }}
-    />
+    
     <Hero/>
     <ServicesLocation/>
     <ReviewSection/>

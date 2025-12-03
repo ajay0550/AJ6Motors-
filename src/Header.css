@@ -1,110 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-/* #header {
-  
-  background-color: #25253f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1px 5px 4px 2px;
-  border-bottom: 1px solid #ff4040;
-} */
+/* GLASS TRANSPARENT HEADER */
 #header {
-  background: linear-gradient(
-    to right,
-    #000 0%,
-    #000 10%,
-    #fff 15%,
-    #fff 70%,
-    #000 75%,
-    #000 100%
-  );
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1px 5px 4px 2px;
-  border-bottom: 1px solid #ff4040;
-  position: sticky;
-  top:0;
-  z-index: 1000;
+  padding: 6px 20px;
+
+  /* Glass effect */
+  background: rgba(0, 0, 0, 0.35); /* slight dark tint */
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  zoom: 0.80;
 }
 
-
+/* LOGO */
 .brand-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
-  line-height: 1;
-  margin-left: 10px;
+  text-align: center;
 }
-
 
 .brand-main {
-  font-family: 'Abril Fatface', serif;
-  color: white;
-  font-size: 18px;
+  font-size: 28px;
   margin: 0;
-  
+  font-family: "Abril Fatface", serif;
+  color: #ffffff;
 }
 
 .brand-line {
   width: 100%;
-  height: 1px;
-  background-color: #ff4040;
-  margin: 1px 0 0px 0;
+  height: 2px;
+  background: #ff4040;
+  margin: 1px 0;
 }
 
 .brand-sub {
   font-family: Impact, sans-serif;
-  color: #a6a6a6;
-  font-size: 10px;
+  color: #e6e6e6;
+  font-size: 12px;
   margin: 0;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
 }
 
+/* NAV LINKS */
 .nav-links {
   display: flex;
-  gap: 10px;
+  gap: 25px;
 }
 
 .nav-links a {
-  position: relative;
-  color: white;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 15px;
   font-family: Impact, sans-serif;
-  letter-spacing: 0px;
-  transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
 }
 
 .nav-links a::after {
   content: "";
   position: absolute;
-  left: 50%;
-  bottom: -3px;
-  width: 0;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
   height: 2px;
-  background-color: #ff4040;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav-links a:hover {
-  color: #ff4040;
+  background: #ff4040;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
 
+/* Red accent underline */
+.red-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #ff4040;
+}
 
-@media (max-width: 600px) {
-  #header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
+/* BURGER MENU */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 24px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
   }
+
   .nav-links {
-    gap: 10px;
+    display: none;
+    flex-direction: column;
+
+    position: absolute;
+    top: 65px;
+    right: 20px;
+
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid #ff4040;
+    padding: 15px;
+    width: 150px;
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 }

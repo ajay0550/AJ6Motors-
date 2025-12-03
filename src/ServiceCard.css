@@ -1,3 +1,4 @@
+/* DESKTOP (unchanged) */
 .service-card {
   width: 280px;
   border-radius: 10px;
@@ -5,94 +6,142 @@
   background: #ffffff;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   font-family: sans-serif;
-  padding-left: 0px;
-  padding-top: 0px;
   padding-right: 5px;
-  padding-bottom: 0px;
-  
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .card-top {
   display: flex;
-  padding: 0px;
-  padding-left: 0px;
-  
-  /* gap: 2px; */
 }
 
 .card-image {
   width: 120px;
   height: 110px;
-  border-radius: 0px;
   object-fit: cover;
-
 }
 
 .card-content {
   flex: 1;
   font-size: 0.85rem;
+  padding-right: 8px;
 }
 
 .card-title-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding-left: 20px;
   padding-top: 5px;
-  
 }
 
 .card-title {
-  font-size: 0.45rem;
-  font-weight: 600;
+  font-size: 0.75rem;       /* slightly smaller */
+  font-weight: 700;
   color: #222;
-  margin: 3;
-  white-space: nowrap; 
-  padding: 0;
+  margin: 0;
+  white-space: normal;      /* FIX: allow wrapping */
+  word-break: break-word;   /* FIX: prevent overflow */
 }
-
 
 .card-points {
   list-style-type: disc;
-  padding-left: 18px;
+  padding-left: 15px;
   margin-top: 6px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   color: #4a4a4a;
-  font-size: 0.50rem;
+  font-size: 0.65rem;       /* slightly smaller */
   line-height: 1.25;
+  word-break: break-word;   /* FIX overflow */
 }
+
 
 .card-bottom {
   background: linear-gradient(90deg, #e8ffe8, #f9fff9);
   padding: 10px 14px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   border-top: 1px solid #d8efd8;
 }
 
 .coupon-text {
   color: #0a8f43;
   font-size: 0.75rem;
-  display: flex;
-  align-items: center;
-}
-
-.coupon-icon {
-  margin-right: 6px;
 }
 
 .login-link {
   color: #0066cc;
-  text-decoration: none;
   font-size: 0.75rem;
+  text-decoration: none;
   font-weight: 500;
 }
-.service-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
 
-.service-card:hover {
-  transform: scale(1.03);  /* slight zoom */
-  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+
+/* ============================= */
+/* 📱 MOBILE FIXES (THE MAGIC)   */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+  /* Make the card full width in mobile */
+  .service-card {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    padding-right: 0;
+  }
+
+  /* Stack the image ABOVE the text */
+  .card-top {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  /* Image scales perfectly */
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  /* Center content */
+  .card-content {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Title bigger + centered */
+  .card-title {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    white-space: normal;
+  }
+
+  /* Points aligned left but centered block */
+  .card-points {
+    font-size: 0.85rem;
+    padding-left: 25px;
+    text-align: left;
+  }
+
+  /* Bottom section (coupon + button) stack nicely */
+  .card-bottom {
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px 10px;
+    text-align: center;
+  }
+
+  .coupon-text {
+    font-size: 0.85rem;
+  }
+
+  .login-link {
+    font-size: 0.9rem;
+  }
 }
