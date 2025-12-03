@@ -12,7 +12,7 @@ function Footer() {
         </div>
         
         <div className="footer-info">
-          <p>Open Daily: 10:00 AM – 8:00 PM</p>
+          <p>Open Mon-Sat: 10:00 AM – 8:00 PM</p>
           <p>Kompally Main Road, Hyderabad</p>
           <p>Phone: +91 7386594076 / +91 9652571976</p>
         </div>
